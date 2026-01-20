@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.env
+.vscode/
+
+# Run script setup_database.py
+data/telecom_churn.db
+
+# Logs y archivos temporales
+*.log
+.DS_Store
