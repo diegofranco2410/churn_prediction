@@ -52,6 +52,20 @@ Using XGBoost's feature importance, we diagnosed the root causes of the system i
 
 **Business Insight:** The "Electronic Check" payment method is the #1 silent killer. A simple campaign incentivizing "Automatic Payments" could significantly reduce churn.
 
+## Deployment
+
+To bridge the gap between the XGBoost model and business operations, I deployed an interactive web application using **Streamlit**. This dashboard serves as the daily tool for the Retention Team Managers.
+
+![Dashboard Preview](images/dashboard_preview1.png)
+*(Figure 4: The interactive interface designed to monitor financial risk in real-time)*
+![Dashboard Preview](images/dashboard_preview2.png)
+
+**Key Capabilities:**
+* **Financial Monitor:** Instantly calculates the total **Monthly Revenue at Risk ($)** based on the model's live predictions, translating probabilities into monetary impact.
+* **Strategic Filtering:** Allows stakeholders to slice the data by *Contract Type* or *Minimum Monthly Bill*, assigning specific high-value lists to senior agents.
+* **Operational Trigger:** Features a "Download Priority List" button that generates a pre-sorted `.csv` file (The Action Plan), ready for the call center dialer.
+* **Root Cause Analysis:** Dynamic **Plotly** charts that visualize *where* the bleeding is happening (e.g., Fiber Optic users paying via Electronic Check).
+
 ---
 
 ## 🛠️ Technical Architecture
